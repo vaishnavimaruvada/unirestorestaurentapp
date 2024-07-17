@@ -78,6 +78,7 @@
 .customization-text {
   color: rgb(112, 112, 243);
   font-weight: 500;
+  margin-bottom: 0px;
 }
 .calories-num {
   font-size: 14px;
@@ -111,10 +112,22 @@
 .calories-num-lg {
   display: none;
 }
+.add-to-cart {
+  background-color: rgb(235, 219, 5);
+  outline: none;
+  border-style: none;
+  height: 40px;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 530;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px;
+}
 @media screen and (min-width: 768px) {
   .dish-item-card {
     justify-content: space-between;
-    height: 240px;
   }
   .calories-num-sm {
     display: none;
