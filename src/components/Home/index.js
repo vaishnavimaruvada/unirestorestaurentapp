@@ -33,6 +33,7 @@ class Home extends Component {
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details',
     )
     const dataResponse = await response.json()
+    console.log(dataResponse)
 
     this.setState({status: diffStates.success, data: dataResponse})
   }
@@ -86,10 +87,11 @@ class Home extends Component {
       dishName: dish.dish_name,
       dishPrice: dish.dish_price,
     }))
-
+    const heading = data[0].restaurant_name
+    console.log(heading)
     return (
       <>
-        <Header count={count} />
+        <Header count={count} heading={heading} />
         <div className="dish-item-category-div">
           <ul className="tabs-container">
             {updatedTableMenuData.map(each => (

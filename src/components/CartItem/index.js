@@ -44,9 +44,8 @@ const CartItem = props => (
           <div className="cart-item-details-container">
             <div className="cart-product-title-brand-container">
               <p className="cart-product-title">{dishName}</p>
-              <p className="cart-product-brand cart-calories">
-                {dishCalories} Calories
-              </p>
+              <p className="cart-product-brand cart-calories">{dishCalories}</p>
+              <p>Calories</p>
             </div>
             <div className="cart-quantity-container">
               {/* eslint-disable-next-line */}

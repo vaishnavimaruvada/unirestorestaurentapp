@@ -7,6 +7,7 @@ import {IoCartOutline} from 'react-icons/io5'
 import CartContext from '../../context/CartContext'
 
 const Header = props => {
+  const {heading} = props
   const onClickLogout = () => {
     const {history} = props
     Cookies.remove('jwt_token')
@@ -23,7 +24,7 @@ const Header = props => {
         return (
           <div className="header-container">
             <Link to="/" className="link">
-              <h1 className="logo-heading">UNI Resto Cafe</h1>
+              <h1 className="logo-heading">{heading}</h1>
             </Link>
             <div className="nav-items">
               <p className="my-order-txt">My Orders</p>
