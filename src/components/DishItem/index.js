@@ -42,8 +42,8 @@ class DishItem extends Component {
           if (checkItemPresences !== undefined) {
             incrementCartItemQuantity(dishId)
           } else {
-            this.setState({quantity: 1})
-            addCartItem({...dish, quantity: 1})
+            // this.setState({quantity: 1})
+            addCartItem({...dish, quantity})
           }
         }
         return (
@@ -102,7 +102,7 @@ class DishItem extends Component {
                 )}
               </div>
             </div>
-            <p className="calories-num calories-num-sm">{`${dishCalories} Calories`}</p>
+            {/* <p className="calories-num calories-num-sm">{`${dishCalories} Calories`}</p> */}
             <div className="cal-img-card">
               <p className="calories-num calories-num-lg">{`${dishCalories} Calories`}</p>
               <img className="dish-img" alt={dishName} src={dishImage} />
