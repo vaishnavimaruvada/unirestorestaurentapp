@@ -30,7 +30,9 @@ const Header = props => {
               <p className="my-order-txt">My Orders</p>
               <Link to="/cart" className="link">
                 <div className="cart-card">
-                  <IoCartOutline className="cart-icon" />
+                  <button data-testid="cart" type="button">
+                    <IoCartOutline className="cart-icon" />
+                  </button>
                   <span className="cart-count">{count}</span>
                 </div>
               </Link>

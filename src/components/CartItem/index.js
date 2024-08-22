@@ -40,7 +40,7 @@ const CartItem = props => (
       }
       return (
         <li className="cart-item">
-          <img className="cart-product-image" src={dishImage} alt="dishImage" />
+          <img className="cart-product-image" src={dishImage} alt={dishName} />
           <div className="cart-item-details-container">
             <div className="cart-product-title-brand-container">
               <p className="cart-product-title">{dishName}</p>
